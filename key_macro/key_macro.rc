@@ -1,0 +1,479 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\key_macro.rc2""  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.\r\n"
+    "#include ""l.KOR\\afxres.rc""      // 표준 구성 요소입니다.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\key_macro.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_KEY_MACRO_DIALOG DIALOGEX 0, 0, 163, 216
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "키보드/마우스 매크로"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "XXX키로 매크로 실행/편집 토글",IDC_STATIC_MESSAGE,7,9,150,8
+    CONTROL         "전체 매크로 실행",IDC_RADIO_MACRO_RUN,"Button",BS_AUTORADIOBUTTON,7,26,69,10
+    CONTROL         "실행 중단과 편집",IDC_RADIO_MACRO_EDIT,"Button",BS_AUTORADIOBUTTON,82,26,69,10
+    EDITTEXT        IDC_EDIT_MACRO_FILE,7,44,94,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BUTTON_MACRO_FILE,101,44,16,14
+    PUSHBUTTON      "저장",IDC_BUTTON_SAVE,118,44,38,14
+    LISTBOX         IDC_LIST_MACROS,7,64,104,84,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "기록",IDC_BUTTON_REC_MACRO,118,64,38,14
+    PUSHBUTTON      "추가",IDC_BUTTON_ADD_MACRO,118,82,38,14
+    PUSHBUTTON      "편집",IDC_BUTTON_EDIT_MACRO,118,99,38,14
+    PUSHBUTTON      "복사",IDC_BUTTON_COPY_MACRO,118,116,38,14
+    PUSHBUTTON      "삭제",IDC_BUTTON_DELETE_MACRO,118,134,38,14
+    LTEXT           "Static",IDC_STATIC_REC_COUNT2,6,151,69,10
+    PUSHBUTTON      "^",IDC_BUTTON_UP2,77,149,17,14
+    PUSHBUTTON      "v",IDC_BUTTON_DOWN2,95,149,17,14
+    LTEXT           "Version: 2.03b (Updated: 2013.10.13)",IDC_STATIC_HOMEPAGE2,7,169,123,8
+    LTEXT           "http://blog.daum.net/pg365/250",IDC_STATIC_HOMEPAGE,7,181,106,8
+    PUSHBUTTON      "설정",IDC_BUTTON_CONFIG,7,195,38,14
+    PUSHBUTTON      "OK",IDOK,73,195,38,14
+    PUSHBUTTON      "Cancel",IDCANCEL,118,195,38,14
+    LISTBOX         IDC_LIST_MACROS2,7,64,104,84,LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_ADD_KEY DIALOGEX 0, 0, 154, 115
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "키보드 이벤트 추가/편집"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "추가할 키보드 키를 누르거나 선택하세요.",IDC_STATIC,7,10,148,8
+    COMBOBOX        IDC_COMBO_KEYBOARD,7,28,140,145,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "누르고 떼기",IDC_RADIO_KEY_3,"Button",BS_AUTORADIOBUTTON,49,49,58,10
+    CONTROL         "누르기",IDC_RADIO_KEY_1,"Button",BS_AUTORADIOBUTTON,49,61,40,10
+    CONTROL         "떼기",IDC_RADIO_KEY_2,"Button",BS_AUTORADIOBUTTON,49,73,32,10
+    PUSHBUTTON      "OK",IDOK,38,94,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,97,94,50,14
+END
+
+IDD_DIALOG_ADD_DELAY DIALOGEX 0, 0, 178, 163
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "시간 지연 추가/편집"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "시간 지연:",IDC_RADIO_DELAY,"Button",BS_AUTORADIOBUTTON,7,15,53,10
+    CONTROL         "지연 시각:",IDC_RADIO_TIME,"Button",BS_AUTORADIOBUTTON,7,102,53,10
+    EDITTEXT        IDC_EDIT_DELAY,61,13,42,14,ES_AUTOHSCROLL
+    LTEXT           "초",IDC_STATIC,109,16,9,8
+    LTEXT           "입력 범위는 0.001 ~ 86400 초 입니다.",IDC_STATIC,39,31,132,8
+    LTEXT           "랜덤 지연",IDC_STATIC,40,45,35,8
+    COMBOBOX        IDC_COMBO_RANDOM,78,43,47,114,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "추가",IDC_STATIC,129,45,17,8
+    LTEXT           "시간지연이 10초고 랜덤 지연이 30% 라면 지연은 7~13초 사이에서 임의로 선택됩니다.",IDC_STATIC,40,63,131,27
+    COMBOBOX        IDC_COMBO_HOUR,61,101,26,173,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "시",IDC_STATIC,88,104,9,8
+    COMBOBOX        IDC_COMBO_MIN,98,101,26,173,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "분",IDC_STATIC,125,104,9,8
+    COMBOBOX        IDC_COMBO_SEC,136,101,26,173,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "초",IDC_STATIC,163,104,9,8
+    LTEXT           "지연 시각까지 실행을 대기합니다.",IDC_STATIC,39,121,122,8
+    PUSHBUTTON      "OK",IDOK,61,142,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,121,142,50,14
+END
+
+IDD_DIALOG_ADD_MOUSE DIALOGEX 0, 0, 172, 215
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "마우스 이벤트 추가/편집"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "마우스 커서 위치와 버튼 상태를 추가하세요.",IDC_STATIC,7,11,158,8
+    LTEXT           "###를 눌러 커서 위치를 획득합니다.",IDC_STATIC_MESSAGE,7,23,158,8
+    LTEXT           "(주의: 휠과 X1,X2버튼을 같이 사용할 수 없음)",IDC_STATIC,7,36,160,8
+    LTEXT           "현재 커서 위치:",IDC_STATIC,7,57,56,8
+    EDITTEXT        IDC_EDIT_CURPOS_X,69,54,32,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_CURPOS_Y,105,54,32,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "절대위치:",IDC_CHECK_MOVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,75,51,10
+    EDITTEXT        IDC_EDIT_ABSPOS_X,69,73,32,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ABSPOS_Y,105,73,32,14,ES_AUTOHSCROLL
+    CONTROL         "휠 굴리기:",IDC_CHECK_WHEEL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,94,53,10
+    EDITTEXT        IDC_EDIT_WHEEL,69,92,32,14,ES_AUTOHSCROLL
+    LTEXT           "마우스 버튼:",IDC_STATIC,7,113,46,8
+    COMBOBOX        IDC_COMBO_BUTTON_SELECT,69,111,96,66,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "클릭",IDC_RADIO_BUTTON_CLICK,"Button",BS_AUTORADIOBUTTON,82,126,32,10
+    CONTROL         "누르기",IDC_RADIO_BUTTON_DOWN,"Button",BS_AUTORADIOBUTTON,82,137,40,10
+    CONTROL         "떼기",IDC_RADIO_BUTTON_UP,"Button",BS_AUTORADIOBUTTON,82,149,32,10
+    CONTROL         "마우스의 절대 위치를 기록",IDC_CHECK_MOUSE_POS_ABSOLUTE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,164,110,10
+    CONTROL         "화면 해상도와 무관하게 마우스 위치 기록",IDC_CHECK_MOUSE_POS_SCRINDEP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,178,162,10
+    PUSHBUTTON      "OK",IDOK,57,194,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,115,194,50,14
+END
+
+IDD_DIALOG_MACRO_EDIT DIALOGEX 0, 0, 240, 344
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "매크로 추가/편집"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "###를 눌러 마우스 위치를 추가합니다.",IDC_STATIC_MESSAGE1,7,10,226,8
+    LTEXT           "매크로 이름:",IDC_STATIC,7,30,47,9
+    EDITTEXT        IDC_EDIT_MACRO_NAME,57,27,108,14,ES_AUTOHSCROLL
+    LTEXT           "시작 단축키:",IDC_STATIC,7,48,47,9
+    COMBOBOX        IDC_COMBO_MACRO_START,57,46,108,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "...",IDC_CHECK_START_OPTION,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,167,45,51,15
+    LTEXT           "중지 단축키:",IDC_STATIC,7,65,47,9
+    COMBOBOX        IDC_COMBO_MACRO_STOP,57,63,108,123,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "...",IDC_CHECK_STOP_OPTION,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,167,62,51,15
+    CONTROL         "전체 매크로 실행과 함께 자동시작",IDC_CHECK_AUTO_START,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,57,81,136,10
+    LISTBOX         IDC_LIST_ITEMS,7,95,158,124,LBS_NOINTEGRALHEIGHT | LBS_WANTKEYBOARDINPUT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "키보드 추가",IDC_BUTTON_ADD_KEY,174,95,59,15
+    PUSHBUTTON      "마우스 추가",IDC_BUTTON_ADD_MOUSE,174,112,59,15
+    PUSHBUTTON      "지연 추가",IDC_BUTTON_ADD_DELAY,174,129,59,15
+    PUSHBUTTON      "문자열 추가",IDC_BUTTON_ADD_STRING,174,147,59,15
+    PUSHBUTTON      "매크로 호출",IDC_BUTTON_ADD_MACRO,174,164,59,15
+    PUSHBUTTON      "독립영역 추가",IDC_BUTTON_ADD_CS,174,182,59,15
+    PUSHBUTTON      "편집",IDC_BUTTON_EDIT,174,204,59,15
+    PUSHBUTTON      "삭제",IDC_BUTTON_DELETE,174,220,59,15
+    LTEXT           "Static",IDC_STATIC_REC_COUNT,7,224,113,8
+    PUSHBUTTON      "^",IDC_BUTTON_UP,125,221,19,15
+    PUSHBUTTON      "v",IDC_BUTTON_DOWN,146,221,19,15
+    LTEXT           "매크로 반복 실행 횟수:",IDC_STATIC,7,245,82,8
+    EDITTEXT        IDC_EDIT_MACRO_REPEAT_COUNT,90,242,40,14,ES_AUTOHSCROLL
+    LTEXT           "회 (0이면 무한 반복)",IDC_STATIC,133,245,72,8
+    GROUPBOX        "매크로 테스트",IDC_STATIC,7,265,226,53
+    PUSHBUTTON      "매크로 시험 실행",IDC_BUTTON_TEST_RUN,14,277,67,15
+    PUSHBUTTON      "중단",IDC_BUTTON_STOP,82,277,34,15
+    CONTROL         "시작/중지 단축키 사용",IDC_CHECK_START_STOP_KEY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,120,279,95,10
+    PUSHBUTTON      "마우스 궤적 표시",IDC_BUTTON_DISPLAY_MOUSE,14,298,67,15
+    PUSHBUTTON      "지우기",IDC_BUTTON_ERASE_MOUSE,82,298,34,15
+    CONTROL         "선택항목 파란색 박스 표시",IDC_CHECK_SELECTED_ITEM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,119,300,110,10
+    PUSHBUTTON      "OK",IDOK,126,323,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,183,323,50,14
+END
+
+IDD_DIALOG_MACRO_REC DIALOGEX 0, 0, 272, 227
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "매크로 기록"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "XXX키로 매크로 기록을 시작하거나 중지합니다.",IDC_STATIC_MESSAGE,7,10,258,8
+    LTEXT           "기록 상태:",IDC_STATIC,7,32,38,8
+    CONTROL         "...",IDC_CHECK_REC_STAT,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,49,30,111,13
+    LISTBOX         IDC_LIST_ITEMS,7,52,154,95,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "기록 옵션:",IDC_STATIC,171,41,38,8
+    CONTROL         "키보드 키",IDC_CHECK_REC_KEY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,171,52,50,10
+    CONTROL         "마우스 버튼",IDC_CHECK_REC_MOUSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,171,65,58,10
+    CONTROL         "위치 포함",IDC_CHECK_REC_BUTTON_MOVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,181,76,50,10
+    CONTROL         "마우스 움직임:",IDC_CHECK_REC_MOUSE_POS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,171,89,69,10
+    EDITTEXT        IDC_EDIT_MOVE,181,101,29,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "픽셀 이상일 때",IDC_STATIC,212,104,53,8
+    CONTROL         "마우스 휠",IDC_CHECK_REC_MOUSE_WHEEL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,171,118,50,10
+    CONTROL         "시간 지연:",IDC_CHECK_TIME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,171,132,53,10
+    EDITTEXT        IDC_EDIT_TIME,181,144,29,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "밀리초 이상일 때",IDC_STATIC,212,147,61,8
+    LTEXT           "Static",IDC_STATIC_REC_COUNT,7,151,154,8
+    CONTROL         "버튼의 누르기/떼기 이벤트를 하나의 이벤트로 합치기",IDC_CHECK_MERGE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,167,205,10
+    CONTROL         "마우스의 절대 위치를 기록; 체크 해제인 경우 상대 위치를 기록",IDC_CHECK_MOUSE_POS_ABSOLUTE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,179,237,10
+    CONTROL         "화면 해상도와 무관하게 마우스 위치 기록",IDC_CHECK_MOUSE_POS_SCRINDEP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,191,162,10
+    PUSHBUTTON      "OK",IDOK,156,206,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,215,206,50,14
+END
+
+IDD_DIALOG_ADD_STRING DIALOGEX 0, 0, 300, 147
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "문자열 추가/편집"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "영어로 문자열을 입력하세요. 한글은 입력할 수 없습니다.",IDC_STATIC,7,7,202,8
+    EDITTEXT        IDC_EDIT_STRING,7,22,286,67,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN
+    CONTROL         "랜덤 문자 생성 사용 (#, *, ?)",IDC_CHECK_RANDOM_CHAR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,91,115,10
+    LTEXT           "#문자는 임의의 대문자(A ~ Z) 중 하나로 대체",IDC_STATIC,7,107,160,8
+    LTEXT           "*문자는 임의의 소문자(a ~ z) 중 하나로 대체",IDC_STATIC,7,120,157,8
+    LTEXT           "?문자는 임의의 숫자(0 ~ 9) 중 하나로 대체",IDC_STATIC,7,132,149,8
+    PUSHBUTTON      "OK",IDOK,187,126,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,243,126,50,14
+END
+
+IDD_DIALOG_ADD_MACRO DIALOGEX 0, 0, 154, 82
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "매크로 호출/편집"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "호출할 매크로를 선택하세요.",IDC_STATIC,7,10,104,8
+    COMBOBOX        IDC_COMBO_MACRO,7,28,140,145,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "OK",IDOK,38,61,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,97,61,50,14
+END
+
+IDD_DIALOG_CONFIG DIALOGEX 0, 0, 211, 220
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "키보드/마우스 매크로 설정"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "프로그램 실행",IDC_STATIC,7,7,197,41
+    CONTROL         "다른 윈도우보다 항상 위에 두기",IDC_CHECK_ALWAYS_ON_TOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,20,114,10
+    CONTROL         "프로그램 시작시 시스템 트레이로 최소화",IDC_CHECK_TRAY_AT_STARTUP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,33,142,10
+    GROUPBOX        "매크로 실행",IDC_STATIC,7,52,197,86
+    LTEXT           "매크로 실행/편집 토글 키:",IDC_STATIC,14,65,82,8
+    COMBOBOX        IDC_COMBO_MACRO_RUN_EDIT_KEY,100,63,96,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "전체 매크로 실행시 선택된 매크로 실행",IDC_CHECK_RUN_SEL_MACRO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,79,137,10
+    CONTROL         "매크로에서 생성한 이벤트로 다른 매크로 시작/중지 허용",IDC_CHECK_MACRO_KEY_REENTRANCE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,92,190,10
+    CONTROL         "실행시 Multimedia Timer 사용 (Windows Timer 사용안함)",IDC_CHECK_USE_MM_TIMER,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,106,194,10
+    LTEXT           "매크로 이벤트 실행 주기: ",IDC_STATIC,14,122,81,8
+    EDITTEXT        IDC_EDIT_EVENT_MIN_DELAY,95,120,34,13,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "밀리초",IDC_STATIC,133,122,22,8
+    GROUPBOX        "매크로 기록",IDC_STATIC,7,143,197,49
+    LTEXT           "매크로 기록 시작/중단 키:",IDC_STATIC,14,158,82,8
+    COMBOBOX        IDC_COMBO_RECORD_START_STOP_KEY,97,156,99,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "마우스 현재 위치 캡쳐 키:",IDC_STATIC,14,174,81,8
+    COMBOBOX        IDC_COMBO_MOUSE_CAPTURE_KEY,97,172,99,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "OK",IDOK,122,199,38,14
+    PUSHBUTTON      "Cancel",IDCANCEL,166,199,38,14
+END
+
+IDD_DIALOG_ADD_CS DIALOGEX 0, 0, 178, 115
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "독립실행구간 추가/편집"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "여러 매크로가 실행될 때 한 매크로의 독립실행구간(들어감 ~ 나옴)은 다른 매크로의 독립실행구간과 동시에 실행되지 않도록 합니다.",IDC_STATIC,7,7,164,29
+    CONTROL         "독립실행구간으로 들어감",IDC_RADIO_CS_ENTER,"Button",BS_AUTORADIOBUTTON,7,50,106,10
+    CONTROL         "독립실행구간에서 나옴 ",IDC_RADIO_CS_LEAVE,"Button",BS_AUTORADIOBUTTON,7,69,100,10
+    PUSHBUTTON      "OK",IDOK,61,94,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,121,94,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,3,1,0
+ PRODUCTVERSION 2,3,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "page365"
+            VALUE "FileDescription", "키보드/마우스 매크로"
+            VALUE "FileVersion", "2.03a (Updated: 2013.10.9)"
+            VALUE "InternalName", "key_macro.exe"
+            VALUE "LegalCopyright", "(c)page365.  All rights reserved."
+            VALUE "OriginalFilename", "key_macro.exe"
+            VALUE "ProductName", "키보드/마우스 매크로"
+            VALUE "ProductVersion", "2.03a (Updated: 2013.10.9)"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_KEY_MACRO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 209
+        HORZGUIDE, 31
+        HORZGUIDE, 51
+        HORZGUIDE, 156
+    END
+
+    IDD_DIALOG_ADD_KEY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 108
+    END
+
+    IDD_DIALOG_ADD_DELAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 171
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 156
+        HORZGUIDE, 49
+    END
+
+    IDD_DIALOG_ADD_MOUSE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_DIALOG_MACRO_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        VERTGUIDE, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 337
+    END
+
+    IDD_DIALOG_MACRO_REC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 265
+        VERTGUIDE, 171
+        VERTGUIDE, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 220
+        HORZGUIDE, 14
+    END
+
+    IDD_DIALOG_ADD_STRING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_DIALOG_ADD_MACRO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_DIALOG_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        VERTGUIDE, 14
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+        HORZGUIDE, 69
+        HORZGUIDE, 126
+    END
+
+    IDD_DIALOG_ADD_CS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 171
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 108
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\key_macro.rc2"  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.
+#include "l.KOR\afxres.rc"      // 표준 구성 요소입니다.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

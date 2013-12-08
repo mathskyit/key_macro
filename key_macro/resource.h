@@ -1,0 +1,127 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++ generated include file.
+// Used by key_macro.rc
+//
+#define IDD_KEY_MACRO_DIALOG            102
+#define IDR_MAINFRAME                   128
+#define IDD_DIALOG_ADD_KEY              129
+#define IDD_DIALOG_ADD_DELAY            130
+#define IDD_DIALOG_ADD_MOUSE            131
+#define IDD_DIALOG_MACRO_EDIT           132
+#define IDD_DIALOG_MACRO_REC            133
+#define IDD_DIALOG_ADD_STRING           134
+#define IDD_DIALOG_ADD_MACRO            135
+#define IDD_DIALOG_CONFIG               136
+#define IDD_DIALOG_ADD_CS               137
+#define IDC_LIST_MACROS                 1000
+#define IDC_LIST_MACROS2                1001
+#define IDC_LIST_ITEMS                  1004
+#define IDC_BUTTON_ADD_KEY              1005
+#define IDC_BUTTON_ADD_MOUSE            1006
+#define IDC_EDIT_DELAY                  1006
+#define IDC_BUTTON_ADD_DELAY            1007
+#define IDC_BUTTON_DELETE               1008
+#define IDC_RADIO_KEY_3                 1008
+#define IDC_RADIO_DELAY                 1008
+#define IDC_BUTTON_ADD_MACRO            1009
+#define IDC_RADIO_KEY_1                 1009
+#define IDC_RADIO_TIME                  1009
+#define IDC_BUTTON_DELETE_MACRO         1010
+#define IDC_RADIO_KEY_2                 1010
+#define IDC_BUTTON_EDIT                 1010
+#define IDC_BUTTON_EDIT_MACRO           1011
+#define IDC_CHECK_MOVE                  1011
+#define IDC_CHECK_REC_KEY               1011
+#define IDC_CHECK_START_OPTION          1011
+#define IDC_CHECK_RANDOM_CHAR           1011
+#define IDC_CHECK_WHEEL                 1012
+#define IDC_BUTTON_MACRO_FILE           1012
+#define IDC_CHECK_REC_MOUSE             1012
+#define IDC_CHECK_STOP_OPTION           1012
+#define IDC_EDIT_CURPOS_X               1013
+#define IDC_EDIT_MACRO_FILE             1013
+#define IDC_CHECK_REC_MOUSE_POS         1013
+#define IDC_EDIT_MACRO_REPEAT_COUNT     1013
+#define IDC_EDIT_STRING                 1013
+#define IDC_EDIT_MESSAGE                1013
+#define IDC_RADIO_MACRO_RUN             1014
+#define IDC_EDIT_CURPOS_Y               1014
+#define IDC_CHECK_TIME                  1014
+#define IDC_EDIT_EVENT_DELAY            1014
+#define IDC_BUTTON_DISPLAY_MOUSE        1014
+#define IDC_RADIO_MACRO_EDIT            1015
+#define IDC_RADIO_BUTTON_UP             1015
+#define IDC_BUTTON_UP                   1015
+#define IDC_CHECK_REC_MOUSE_WHEEL       1015
+#define IDC_COMBO_KEYBOARD              1016
+#define IDC_BUTTON_REC_MACRO            1016
+#define IDC_BUTTON_DOWN                 1016
+#define IDC_COMBO_HOUR                  1016
+#define IDC_CHECK_REC_KEY2              1016
+#define IDC_CHECK_MERGE                 1016
+#define IDC_COMBO_MACRO_STOP            1017
+#define IDC_BUTTON_DELETE_MACRO2        1017
+#define IDC_EDIT_EVENT_DELAY2           1017
+#define IDC_EDIT_EVENT_MIN_DELAY        1017
+#define IDC_CHECK_BUTTON_MERGE2         1017
+#define IDC_CHECK_MOUSE_POS_SCRINDEP    1017
+#define IDC_BUTTON_CONFIG               1017
+#define IDC_COMBO_MACRO_START           1018
+#define IDC_BUTTON_COPY_MACRO           1018
+#define IDC_CHECK_MOUSE_POS_ABSOLUTE    1018
+#define IDC_EDIT_MACRO_NAME             1019
+#define IDC_COMBO_MIN                   1019
+#define IDC_COMBO_MACRO_RUN_EDIT_KEY                  1019
+#define IDC_CHECK_REC_BUTTON_MOVE       1019
+#define IDC_COMBO_SEC                   1020
+#define IDC_BUTTON_UP2                  1020
+#define IDC_BUTTON_ADD_STRING           1020
+#define IDC_COMBO_RECORD_START_STOP_KEY                  1020
+#define IDC_BUTTON_DISPLAY_MOUSE2       1021
+#define IDC_BUTTON_ERASE_MOUSE          1021
+#define IDC_BUTTON_DOWN2                1021
+#define IDC_COMBO_MOUSE_CAPTURE_KEY                  1021
+#define IDC_BUTTON_TEST_RUN             1022
+#define IDC_BUTTON_SAVE                 1022
+#define IDC_BUTTON_ERASE_MOUSE2         1023
+#define IDC_BUTTON_STOP                 1023
+#define IDC_BUTTON_ADD_CS               1024
+#define IDC_RADIO_BUTTON_CLICK          1029
+#define IDC_RADIO_BUTTON_DOWN           1030
+#define IDC_EDIT_ABSPOS_X               1031
+#define IDC_EDIT_TIME                   1031
+#define IDC_EDIT_ABSPOS_Y               1032
+#define IDC_EDIT_MOVE                   1032
+#define IDC_EDIT_WHEEL                  1033
+#define IDC_STATIC_HOMEPAGE             1036
+#define IDC_STATIC_HOMEPAGE2            1037
+#define IDC_CHECK_REC_STAT              1037
+#define IDC_CHECK_ALWAYS_ON_TOP         1038
+#define IDC_STATIC_REC_COUNT            1039
+#define IDC_CHECK_TRAY_AT_STARTUP       1039
+#define IDC_COMBO_BUTTON_SELECT         1040
+#define IDC_STATIC_REC_COUNT2           1040
+#define IDC_CHECK_RUN_SEL_MACRO         1041
+#define IDC_COMBO_MACRO                 1042
+#define IDC_CHECK_SEL_MACRO_RUN2        1042
+#define IDC_CHECK_MACRO_KEY_REENTRANCE  1042
+#define IDC_CHECK_AUTO_START            1043
+#define IDC_CHECK_USE_MM_TIMER          1043
+#define IDC_CHECK_START_STOP_KEY        1044
+#define IDC_STATIC_MESSAGE1             1046
+#define IDC_CHECK_SELECTED_ITEM         1045
+#define IDC_STATIC_MESSAGE              1045
+#define IDC_RADIO_CS_ENTER              1047
+#define IDC_RADIO_CS_LEAVE              1048
+#define IDC_COMBO_RANDOM                1049
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        139
+#define _APS_NEXT_COMMAND_VALUE         32771
+#define _APS_NEXT_CONTROL_VALUE         1050
+#define _APS_NEXT_SYMED_VALUE           101
+#endif
+#endif
